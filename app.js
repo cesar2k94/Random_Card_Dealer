@@ -20,6 +20,7 @@ function random_number(){
     }
     return letra;
 }
+
 function random_card(){
     let aleatorio_number=Math.floor(Math.random()*4);
     return aleatorio_number;
@@ -34,59 +35,22 @@ let element;
 switch (number) {
     case 1:
         element = document.querySelector(".card_top");
-        element.parentNode.removeChild(element); 
+        element.classList.replace('card_top', 'card1_top');
         element = document.querySelector(".card_bottom");
-        element.parentNode.removeChild(element); 
-        element = document.querySelector(".card1_top");
-        element.parentNode.removeChild(element); 
-        element = document.querySelector(".card1_bottom");
-        element.parentNode.removeChild(element); 
-        element = document.querySelector(".card2_top");
-        element.parentNode.removeChild(element); 
-        element = document.querySelector(".card2_bottom");
-        element.parentNode.removeChild(element); 
+        element.classList.replace('card_bottom', 'card1_bottom');
         break;
     case 2:
-        element = document.querySelector(".card1_top");
-        element.parentNode.removeChild(element); 
-        element = document.querySelector(".card1_bottom");
-        element.parentNode.removeChild(element); 
-        element = document.querySelector(".card2_top");
-        element.parentNode.removeChild(element); 
-        element = document.querySelector(".card2_bottom");
-        element.parentNode.removeChild(element); 
-        element = document.querySelector(".card3_top");
-        element.parentNode.removeChild(element); 
-        element = document.querySelector(".card3_bottom");
-        element.parentNode.removeChild(element); 
+        element = document.querySelector(".card_top");
+        element.classList.replace('card_top', 'card2_top');
+        element = document.querySelector(".card_bottom");
+        element.classList.replace('card_bottom', 'card2_bottom');  
         break;
     case 3:
-        element = document.querySelector(".card1_top");
-        element.parentNode.removeChild(element); 
-        element = document.querySelector(".card1_bottom");
-        element.parentNode.removeChild(element); 
         element = document.querySelector(".card_top");
-        element.parentNode.removeChild(element); 
+        element.classList.replace('card_top', 'card3_top');
         element = document.querySelector(".card_bottom");
-        element.parentNode.removeChild(element); 
-        element = document.querySelector(".card3_top");
-        element.parentNode.removeChild(element); 
-        element = document.querySelector(".card3_bottom");
-        element.parentNode.removeChild(element); 
+        element.classList.replace('card_bottom', 'card3_bottom');
         break;
-
     default:
-        element = document.querySelector(".card_top");
-        element.parentNode.removeChild(element); 
-        element = document.querySelector(".card_bottom");
-        element.parentNode.removeChild(element); 
-        element = document.querySelector(".card2_top");
-        element.parentNode.removeChild(element); 
-        element = document.querySelector(".card2_bottom");
-        element.parentNode.removeChild(element); 
-        element = document.querySelector(".card3_top");
-        element.parentNode.removeChild(element); 
-        element = document.querySelector(".card3_bottom");
-        element.parentNode.removeChild(element); 
         break;
 }
