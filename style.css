@@ -1,0 +1,94 @@
+body{
+    background: green;   
+}
+.total{
+    background: white;
+    width: 250px;
+    height: 360px;
+    margin: auto;   
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+     
+    border-radius: 15px; 
+}
+
+.card_top::after{
+    content: "♥";
+    font-size: 90px;
+    position: absolute;
+    top: -1%;
+    left: 4%;
+    color:red; 
+  
+}
+.card1_top::after{
+    content: "♦";
+    font-size: 90px;
+    position: absolute;
+    top: -1%;
+    left: 4%;
+    color:red;   
+}
+.card2_top::after{
+    content: "♠";
+    font-size: 90px;
+    position: absolute;
+    top: -1%;
+    left: 4%;
+    color:black;   
+}
+.card3_top::after{
+    content: "♣";
+    font-size: 90px;
+    position: absolute;
+    top: -1%;
+    left: 4%;
+    color:black;   
+}
+.number{
+    margin-top: 20px;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card_bottom::after{
+    content: "♥";
+    font-size: 90px;
+    position: absolute;
+    bottom: -1%;
+    right: 4%; 
+    transform: rotate(180deg);
+    color:red;   
+}
+.card1_bottom::after{
+    content: "♦";
+    font-size: 90px;
+    position: absolute;
+    bottom: -1%;
+    right: 4%; 
+    transform: rotate(180deg);
+    color:red;   
+}
+.card2_bottom::after{
+    content: "♠";
+    font-size: 90px;
+    position: absolute;
+    bottom: -1%;
+    right: 4%; 
+    transform: rotate(180deg);
+    color:black;   
+}
+.card3_bottom::after{
+    content: "♣";
+    font-size: 90px;
+    position: absolute;
+    bottom: -1%;
+    right: 4%; 
+    transform: rotate(180deg);
+    color:black;   
+}
